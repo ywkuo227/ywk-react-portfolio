@@ -1,38 +1,316 @@
-.App {
-  text-align: center;
+/* Set global varibles. */
+:root {
+    --tiffanygreen: rgba(163, 201, 203, 190);
+    --grey: rgba(53, 55, 63, 55);
+    --white:rgba(237, 237, 246, 238);
+    --oceanblue: rgba(115, 124, 146, 124);
+    --darkgrey: rgba(60, 65, 72, 64);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Setting the page as border box and set padding & margin to 0, as well as setting font family to font families in modern OS. */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Making headers less bold. */
+h1, h2, h3, h4 {
+    font-weight: normal;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* Set background color to white. */
+body {
+    background-color: var(--white);
 }
 
-.App-link {
-  color: #61dafb;
+/* Set Header, H1 and Nav for the page. Spread them out horizontally. */
+header {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--grey);
+    width: 100%;
+    padding: 15px 0 15px 0;
+    justify-content: space-between;
+    align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h1 {
+    display: inline-block;
+    background-color: var(--tiffanygreen);
+    font-size: 40px;
+    color: var(--grey);
+    padding: 10px 10px 10px 80px;
+}
+
+nav {
+    padding: 0 5.5% 0 5.5%;
+    display: flex;
+    flex-direction: row;
+}
+
+nav div a {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 17px;
+    color: var(--tiffanygreen);
+    padding: 5px;
+    margin: 5px;
+    border-bottom: 3px solid var(--tiffanygreen);
+}
+
+/* Set Hero image followed by a subtitle sitting on top of paddings in the bottom right corner. */
+.hero {
+    display: flex;
+    padding-bottom: 25px;
+    padding-right: 80px;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: 320px;
+    width: 100%;
+    background-image: url("./images/background.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+h2 {
+    background-color: var(--tiffanygreen);
+    font-size: 30px;
+    color: var(--grey);
+    padding: 10px;
+}
+
+/* Main body of the page. */
+main {
+    margin-top: 35px;
+}
+
+/* Sections of main body: About Me, Work (Portfolio) and Contact Me. */
+section {
+    display: flex;
+    justify-content: flex-start;
+    color: var(--oceanblue);
+    margin: 22.5px 0 22.5px 0;
+}
+
+/* Header for the sections. */
+h3 {
+    display: flex;
+    float: left;
+    font-size: 40px;
+    align-items: flex-end;
+    flex-direction: column;
+    width: 23.3%;
+    padding-right: 18px;
+    border-right: 4px solid var(--oceanblue);
+}
+
+/* Section bodies. */
+article, section ul {
+    float: right;
+    padding-left: 40px;
+    width: 70.2%;
+}
+
+/* About Me section styles. */
+.aboutme {
+    font-size: 13px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+.aboutme img {
+    height: 100px;
+    float: left;
+    margin: 0 10px 10px 0;
+}
+
+/* Work section. */
+.work{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+/* Work portfolio cards. */
+/* Set background image width to 100% and height to auto, opacity to 0.8.  */
+.workcards {
+    display: flex;
+    flex: 1 0 47.5%;
+    height: 200px;
+    margin: 7.5px;
+    text-decoration: none;
+    align-items: flex-end;
+    color: var(--darkgrey);
+    border: 5px solid var(--tiffanygreen);
+    padding-bottom: 20px;
+    background-color: var(--tiffanygreen);
+    background-size: 100% auto;
+    opacity: 0.8;
+}
+
+.workcard-description {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.workcards-large {
+    flex: 2 1 100%;
+    height: 400px;
+}
+
+.workcards-links {
+    display: flex;
+    justify-content: center;
+}
+
+.workcards-links a {
+    text-decoration: none;
+    color: var(--darkgrey);
+    font-size: larger;
+    font-weight: bold;
+}
+
+.workcards-links a:hover {
+    color: #fff;
+}
+
+/* Hovering effect, increase opacity to 1. */
+.workcards:hover {
+    opacity: 1;
+}
+
+/* Background for work portfolio card titles. */
+.workcards div {
+    padding: 10px 10px 10px 10px;
+    background-color: var(--tiffanygreen);
+}
+
+/* Description for the project. */
+.workcards p {
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+/* Header for work portfolio card titles. */
+h4 {
+    font-size: 19px;
+}
+
+/* Use footer to mimic padding at the end of the page. */
+footer {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer div {
+    width: 66%;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer div a {
+    text-decoration: none;
+    font-size: 17px;
+    color: var(--oceanblue);
+    padding: 5px;
+    border-bottom: 3px solid var(--oceanblue);
+}
+
+/* Viewport for mobile view. */
+@media screen and (max-width: 992px) {
+
+    /* H1 and Navigation bar stack on top of each other. */
+    header {
+        padding: 0;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    
+    h1 {
+        padding: 0;
+        text-align: center;
+        width: 100%;
+        padding: 5px 0 5px 0;
+    }
+    
+    nav {
+        padding: 5px 0 5px 0;
+    }
+
+    /* Moving the Hero image subtitle to center. */
+    .hero {
+        padding-right: 0;
+        padding-bottom: 8px;
+        justify-content: center;
+    }
+
+    /* Set Main body padding at top and bottom. */
+    main {
+        margin: 0 35px 0 35px;
+    }
+
+    /* Section titles and content to vertical. */
+    section {
+        margin: 40px 0 40px 0;
+        flex-direction: column;
+    }
+
+    /* Headers with two works from double line to single line. */
+    h3 {
+        float: none;
+        font-size: 40px;
+        text-align: left;
+        flex-direction: row;
+        width: 100%;
+        padding-right: none;
+        padding-bottom: 15px;
+        border-right: none;
+        border-bottom: 4px solid var(--oceanblue);
+    }
+    
+    /* "Faking" space between header. */
+    h3 span {
+        margin-right: 9px;
+    }
+
+    /* Section bodies to stack on top of each other in the center. Re-adjust paddings at the top and bottom. */
+    article, .work, section ul {
+        float: none;
+        padding-left: 0;
+        padding-top: 25px;
+        width: 100%;
+    }
+    
+    /* Added padding to surround the work portfolio cards. */
+    .work {
+        padding: 15px 10px 15px 10px;
+    }
+
+    /* Change all work portfolio card height to 175px. */
+    .workcards {
+        flex: 1 0 100%;
+        height: 175px;
+    }
+
+    /* Change Surf Report card height to be consistent with others at 175px. */
+    .workcards-large {
+        flex: 1 0 100%;
+        height: 175px;
+    }
+
+    /* Turn contact listing from horizontal to vertical. */
+    footer div {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    /* Set margin at the bottom of each listing to space out. */
+    footer div a {
+        margin-bottom: 5px;
+    }
+
 }
