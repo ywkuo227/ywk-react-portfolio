@@ -6,52 +6,52 @@ const workData =
         {
             "title": "Life Happens",
             "tech": "JavaScript / Bulma / Third-party APIs",
-            "imgLink": "../../images/screenshots/life_happens.png",
+            "className": "workcards life_happens",
             "appLink": "https://ywkuo227.github.io/life-happens/",
             "repoLink": "https://github.com/ywkuo227/life-happens"
         },
         {
             "title": "Weather Dashboard",
             "tech": "JavaScript / Bootstrap / OpenWeather API",
-            "imgLink": "../../images/screenshots/weather.jpg",
+            "className": "workcards weather",
             "appLink": "https://ywkuo227.github.io/weather-dashboard/",
             "repoLink": "https://github.com/ywkuo227/weather-dashboard"
         },
         {
             "title": "Work Day Scheduler",
             "tech": "JavaScript / jQuery / Moment.js",
-            "imgLink": "../../images/screenshots/scheduler.jpeg",
+            "className": "workcards scheduler",
             "appLink": "https://ywkuo227.github.io/work-day-scheduler/",
             "repoLink": "https://github.com/ywkuo227/work-day-scheduler"
         },
         {
             "title": "Facility Management",
             "tech": "Node.js / Express.js / MySQL / MVC / Handlebars",
-            "imgLink": "../../images/screenshots/fac_mgmt.png",
+            "className": "workcards fac_mgmt",
             "appLink": "https://dn-fac-mgmt.herokuapp.com/",
             "repoLink": "https://github.com/DN-Vanguard/Facility_Management"
         },
         {
             "title": "The Tech Blog",
             "tech": "Node.js / Express.js / MySQL / MVC / Handlebars",
-            "imgLink": "../../images/screenshots/tech_blog.jpeg",
+            "className": "workcards tech_blog",
             "appLink": "https://ywk-tech-blog.herokuapp.com/",
             "repoLink": "https://github.com/ywkuo227/tech-blog"
         },
         {
             "title": "Note Taker",
             "tech": "Node.js / Express.js / Heroku",
-            "imgLink": "../../images/screenshots/note_taker.jpeg",
+            "className": "workcards note_taker",
             "appLink": "https://ywk-note-taker.herokuapp.com/",
             "repoLink": "https://github.com/ywkuo227/note-taker"
         },
-        // {
-        //     "title": "E-Commerce Backend",
-        //     "tech": "Express.js / MySQL / Sequelize",
-        //     "imgLink": "../../images/screenshots/ecommerce.png",
-        //     "appLink": "https://drive.google.com/file/d/15QpNpx7fV19kup6EGUaaZfg9RPPz7OoC/view?usp=sharing",
-        //     "repoLink": "https://github.com/ywkuo227/e-commerce-backend"
-        // }
+        {
+            "title": "E-Commerce Backend",
+            "tech": "Express.js / MySQL / Sequelize",
+            "className": "workcards ecommerce",
+            "appLink": "https://drive.google.com/file/d/15QpNpx7fV19kup6EGUaaZfg9RPPz7OoC/view?usp=sharing",
+            "repoLink": "https://github.com/ywkuo227/e-commerce-backend"
+        }
     ];
 
 export default function Project() {
@@ -62,7 +62,7 @@ export default function Project() {
                     <h3>Work</h3>
                     <article class="work">
                         {workData.map((work) => (
-                            <WorkCard title={work.title} tech={work.tech} imgLink={work.imgLink} appLink={work.appLink} repoLink={work.repoLink} />
+                            <WorkCard title={work.title} tech={work.tech} className={work.className} appLink={work.appLink} repoLink={work.repoLink} />
                         ))}
                     </article>
                 </section>

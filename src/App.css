@@ -53,11 +53,15 @@ nav {
 nav div a {
     display: inline-block;
     text-decoration: none;
-    font-size: 17px;
+    font-size: larger;
     color: var(--tiffanygreen);
     padding: 5px;
     margin: 5px;
     border-bottom: 3px solid var(--tiffanygreen);
+}
+
+nav div a:hover {
+    opacity: 0.8;
 }
 
 /* Set Hero image followed by a subtitle sitting on top of paddings in the bottom right corner. */
@@ -121,9 +125,10 @@ article, section ul {
     margin-bottom: 20px;
 }
 .aboutme img {
-    height: 100px;
+    height: 120px;
     float: left;
-    margin: 0 10px 10px 0;
+    margin: 0 15px 15px 0;
+    border-radius: 10rem;
 }
 
 /* Work section. */
@@ -208,16 +213,58 @@ h4 {
 }
 
 #contact-me div p {
-    margin: 10px 0 10px 0;
+    margin: 0.25rem 0 0.25rem 0;
 }
 
 #contact-me div a {
-    margin: 10px 0 10px 0;
+    margin: 0.25rem 0 0.25rem 0;
     display: inline-block;
+    width: fit-content;
     text-decoration: none;
     color: var(--oceanblue);
     padding: 5px;
     border-bottom: 3px solid var(--oceanblue);
+}
+
+#contact-me form div {
+    margin: 1rem 0 1rem 0;
+}
+
+#contact-me form input {
+    margin-top: 0.75rem;
+    width: 20rem;
+    height: 2.5rem;
+    font-size: medium;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: var(--darkgrey);
+}
+
+#contact-me form textarea {
+    margin-top: 0.75rem;
+    width: 175%;
+    height: auto;
+    font-size: medium;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: var(--darkgrey);
+}
+
+#contact-me form button {
+    width: fit-content;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    border-width: 1px;
+    background-color: var(--tiffanygreen);
+    color: var(--darkgrey);
+    font-weight: bolder;
+    font-size: large;
+}
+
+#contact-me form button:hover {
+    opacity: 0.8;
 }
 
 #resume div {
@@ -255,10 +302,14 @@ footer div {
 
 footer div a {
     text-decoration: none;
-    font-size: 17px;
+    font-size: larger;
     color: var(--oceanblue);
     padding: 5px;
     border-bottom: 3px solid var(--oceanblue);
+}
+
+footer div a:hover {
+    opacity: 0.8;
 }
 
 /* Viewport for mobile view. */
@@ -351,6 +402,24 @@ footer div a {
         width: fit-content;
     }
 
+    #contact-me form textarea {
+        width: 90%;
+    }
+
+    #resume div a {
+        margin-top: 30px;
+        width: fit-content;
+    }
+
+    #resume div p {
+        margin-bottom: 0;
+    }
+
+    #resume div ul {
+        margin-top: -1rem;
+        margin-left: 50px;
+    }
+
     /* Turn contact listing from horizontal to vertical. */
     footer div {
         flex-direction: column;
@@ -362,4 +431,33 @@ footer div a {
         margin-bottom: 5px;
     }
 
+}
+
+/* Background Images for WorkCards */
+.ecommerce {
+    background-image: url("./images/screenshots/ecommerce.png");
+}
+
+.fac_mgmt {
+    background-image: url("./images/screenshots/fac_mgmt.png");
+}
+
+.life_happens {
+    background-image: url("./images/screenshots/life_happens.png");
+}
+
+.note_taker {
+    background-image: url("./images/screenshots/note_taker.jpeg");
+}
+
+.scheduler {
+    background-image: url("./images/screenshots/scheduler.jpeg");
+}
+
+.tech_blog {
+    background-image: url("./images/screenshots/tech_blog.jpeg");
+}
+
+.weather {
+    background-image: url("./images/screenshots/weather.jpg");
 }
