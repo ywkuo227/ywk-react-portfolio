@@ -1,25 +1,29 @@
 {
   "files": {
-    "main.css": "/ywk-react-portfolio/static/css/main.5e8dbdc5.chunk.css",
-    "main.js": "/ywk-react-portfolio/static/js/main.a8dabda4.chunk.js",
-    "main.js.map": "/ywk-react-portfolio/static/js/main.a8dabda4.chunk.js.map",
-    "runtime-main.js": "/ywk-react-portfolio/static/js/runtime-main.f35562ca.js",
-    "runtime-main.js.map": "/ywk-react-portfolio/static/js/runtime-main.f35562ca.js.map",
-    "static/js/2.e573dbe1.chunk.js": "/ywk-react-portfolio/static/js/2.e573dbe1.chunk.js",
-    "static/js/2.e573dbe1.chunk.js.map": "/ywk-react-portfolio/static/js/2.e573dbe1.chunk.js.map",
-    "static/js/3.5e29d0f8.chunk.js": "/ywk-react-portfolio/static/js/3.5e29d0f8.chunk.js",
-    "static/js/3.5e29d0f8.chunk.js.map": "/ywk-react-portfolio/static/js/3.5e29d0f8.chunk.js.map",
+    "main.css": "/ywk-react-portfolio/static/css/main.3757c8ec.chunk.css",
+    "main.js": "/ywk-react-portfolio/static/js/main.adae26d0.chunk.js",
+    "main.js.map": "/ywk-react-portfolio/static/js/main.adae26d0.chunk.js.map",
+    "runtime-main.js": "/ywk-react-portfolio/static/js/runtime-main.902beeeb.js",
+    "runtime-main.js.map": "/ywk-react-portfolio/static/js/runtime-main.902beeeb.js.map",
+    "static/css/2.620f3cd4.chunk.css": "/ywk-react-portfolio/static/css/2.620f3cd4.chunk.css",
+    "static/js/2.ac16a585.chunk.js": "/ywk-react-portfolio/static/js/2.ac16a585.chunk.js",
+    "static/js/2.ac16a585.chunk.js.map": "/ywk-react-portfolio/static/js/2.ac16a585.chunk.js.map",
+    "static/js/3.7e59fcde.chunk.js": "/ywk-react-portfolio/static/js/3.7e59fcde.chunk.js",
+    "static/js/3.7e59fcde.chunk.js.map": "/ywk-react-portfolio/static/js/3.7e59fcde.chunk.js.map",
     "index.html": "/ywk-react-portfolio/index.html",
-    "static/css/main.5e8dbdc5.chunk.css.map": "/ywk-react-portfolio/static/css/main.5e8dbdc5.chunk.css.map",
-    "static/js/2.e573dbe1.chunk.js.LICENSE.txt": "/ywk-react-portfolio/static/js/2.e573dbe1.chunk.js.LICENSE.txt",
+    "static/css/2.620f3cd4.chunk.css.map": "/ywk-react-portfolio/static/css/2.620f3cd4.chunk.css.map",
+    "static/css/main.3757c8ec.chunk.css.map": "/ywk-react-portfolio/static/css/main.3757c8ec.chunk.css.map",
+    "static/js/2.ac16a585.chunk.js.LICENSE.txt": "/ywk-react-portfolio/static/js/2.ac16a585.chunk.js.LICENSE.txt",
     "static/media/App.css": "/ywk-react-portfolio/static/media/background.5a4d1440.jpg",
+    "static/media/bootstrap-icons.css": "/ywk-react-portfolio/static/media/bootstrap-icons.dfd0ea12.woff2",
     "static/media/me.e5f5ac73.jpg": "/ywk-react-portfolio/static/media/me.e5f5ac73.jpg",
     "static/media/resume.1128607b.pdf": "/ywk-react-portfolio/static/media/resume.1128607b.pdf"
   },
   "entrypoints": [
-    "static/js/runtime-main.f35562ca.js",
-    "static/js/2.e573dbe1.chunk.js",
-    "static/css/main.5e8dbdc5.chunk.css",
-    "static/js/main.a8dabda4.chunk.js"
+    "static/js/runtime-main.902beeeb.js",
+    "static/css/2.620f3cd4.chunk.css",
+    "static/js/2.ac16a585.chunk.js",
+    "static/css/main.3757c8ec.chunk.css",
+    "static/js/main.adae26d0.chunk.js"
   ]
 }
