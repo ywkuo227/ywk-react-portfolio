@@ -81,10 +81,10 @@ h2 {
     padding: 10px;
 }
 
-/* Main body of the page. */
+/* Main body of the page.
 main {
     margin-top: 35px;
-}
+} */
 
 /* Sections of main body: About Me, Work (Portfolio) and Contact Me. */
 section {
@@ -115,7 +115,8 @@ article, section ul {
 
 /* About Me section styles. */
 .aboutme {
-    font-size: 13px;
+    margin-top: 35px;
+    font-size: larger;
     line-height: 1.5;
     margin-bottom: 20px;
 }
@@ -196,6 +197,23 @@ article, section ul {
 /* Header for work portfolio card titles. */
 h4 {
     font-size: 19px;
+}
+
+/* Style for contact info. */
+#contact-me div {
+    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+    font-size: larger;
+}
+
+#contact-me div a {
+    margin: 10px 0 10px 0;
+    display: inline-block;
+    text-decoration: none;
+    color: var(--oceanblue);
+    padding: 5px;
+    border-bottom: 3px solid var(--oceanblue);
 }
 
 /* Use footer to mimic padding at the end of the page. */
@@ -300,6 +318,10 @@ footer div a {
     .workcards-large {
         flex: 1 0 100%;
         height: 175px;
+    }
+
+    #contact-me div a {
+        width: fit-content;
     }
 
     /* Turn contact listing from horizontal to vertical. */
