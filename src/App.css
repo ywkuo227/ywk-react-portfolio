@@ -207,12 +207,35 @@ h4 {
     font-size: larger;
 }
 
+#contact-me div p {
+    margin: 10px 0 10px 0;
+}
+
 #contact-me div a {
     margin: 10px 0 10px 0;
     display: inline-block;
     text-decoration: none;
     color: var(--oceanblue);
     padding: 5px;
+    border-bottom: 3px solid var(--oceanblue);
+}
+
+#resume div {
+    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+    font-size: larger;
+}
+
+#resume div a, p, ul {
+    margin: 10px;
+    text-decoration: none;
+}
+
+#resume div a {
+    text-decoration: none;
+    font-weight: bolder;
+    color: var(--oceanblue);
     border-bottom: 3px solid var(--oceanblue);
 }
 
@@ -318,6 +341,10 @@ footer div a {
     .workcards-large {
         flex: 1 0 100%;
         height: 175px;
+    }
+
+    #contact-me div {
+        margin-top: 10px;
     }
 
     #contact-me div a {
