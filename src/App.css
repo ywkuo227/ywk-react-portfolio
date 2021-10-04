@@ -280,10 +280,18 @@ h4 {
 }
 
 #resume div a {
+    padding: 0.5rem;
     text-decoration: none;
     font-weight: bolder;
-    color: var(--oceanblue);
-    border-bottom: 3px solid var(--oceanblue);
+    background-color: var(--darkgrey);
+    color: var(--tiffanygreen);
+    border-width: 3px;
+    border-color: var(--tiffanygreen);
+    border-style: solid;
+}
+
+#resume div a:hover {
+    opacity: 0.8;
 }
 
 /* Use footer to mimic padding at the end of the page. */
@@ -402,6 +410,10 @@ footer div a:hover {
         width: fit-content;
     }
 
+    #contact-me form input {
+        width: 90%;
+    }
+
     #contact-me form textarea {
         width: 90%;
     }
@@ -431,33 +443,4 @@ footer div a:hover {
         margin-bottom: 5px;
     }
 
-}
-
-/* Background Images for WorkCards */
-.ecommerce {
-    background-image: url("./images/screenshots/ecommerce.png");
-}
-
-.fac_mgmt {
-    background-image: url("./images/screenshots/fac_mgmt.png");
-}
-
-.life_happens {
-    background-image: url("./images/screenshots/life_happens.png");
-}
-
-.note_taker {
-    background-image: url("./images/screenshots/note_taker.jpeg");
-}
-
-.scheduler {
-    background-image: url("./images/screenshots/scheduler.jpeg");
-}
-
-.tech_blog {
-    background-image: url("./images/screenshots/tech_blog.jpeg");
-}
-
-.weather {
-    background-image: url("./images/screenshots/weather.jpg");
 }
