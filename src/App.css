@@ -404,6 +404,7 @@ footer div a:hover {
 
     #contact-me div {
         margin-top: 10px;
+        margin-left: 0px;
     }
 
     #contact-me div a {
@@ -411,11 +412,15 @@ footer div a:hover {
     }
 
     #contact-me form input {
-        width: 90%;
+        width: 60%;
     }
 
     #contact-me form textarea {
-        width: 90%;
+        width: 100%;
+    }
+
+    #resume div {
+        margin-left: 0px;
     }
 
     #resume div a {
